@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  background: $color__primary;
+  padding: 0.5em 1.25em 0.56em;
+  font-size: 0.75em;
+  font-weight: 700;
+  border-radius: $radius;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  user-select: none;
+  transition: 0.2s;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover, &:focus, &:active {
+    color: white;
+    background: darken($color__primary, 5%);
+  }
+}

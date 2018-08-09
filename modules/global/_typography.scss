@@ -1,0 +1,35 @@
+/**
+  * Typography
+  */
+
+a {
+  color: $color__primary;
+  cursor: pointer;
+  text-decoration: none;
+
+  strong { color: currentColor; }
+
+  &:visited,  { color: $color__primary; }
+
+  &:focus, &:hover, &:active, {
+
+  }
+}
+
+hr {
+  border: none;
+  width: 60px;
+  height: 3px;
+  background: $color__secondary;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 1.4em;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+h1 {
+  font-size: 3em;
+}

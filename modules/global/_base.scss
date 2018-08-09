@@ -1,0 +1,39 @@
+*, *:before, *:after { box-sizing: inherit; }
+
+html {
+  background-color: white;
+  font-size: $font-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: $font__primary;
+  overflow-x: hidden;
+
+}
+
+#page {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

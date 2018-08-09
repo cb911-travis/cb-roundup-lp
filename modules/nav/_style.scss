@@ -1,0 +1,37 @@
+.nav {
+  background: black;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between
+}
+
+.logo {
+  background: url('img/logo.png');
+  height: 90px;
+  width: 195px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav__menu {
+  display: flex;
+  align-self: center;
+}
+
+.menu__item {
+  margin-right: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    color: white;
+    font-size: 0.75em;
+  }
+}
