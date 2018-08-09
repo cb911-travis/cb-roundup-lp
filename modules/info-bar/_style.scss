@@ -1,0 +1,26 @@
+.info-bar {
+  background: linear-gradient(to bottom, lighten($color__primary,5%), darken($color__primary, 15%));
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 3em 0 2.5em;
+}
+
+.info-bar__item {
+  display: flex;
+  text-align: left;
+}
+
+.info-bar__info {
+  padding-left: 1em;
+}
+.info-bar__item-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.info-bar__item-description {
+  font-weight: 300;
+}
