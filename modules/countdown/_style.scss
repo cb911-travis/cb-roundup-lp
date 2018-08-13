@@ -1,0 +1,24 @@
+.countdown {
+  background: url('img/bg__city.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.countdown__timer {
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+}
+
+.time-wrapper {
+  padding: 0 1.5em;
+}
+
+.time {
+  font-size: 6em;
+  font-weight: 200;
+  line-height: 1;
+}
+.countdown__description { margin-bottom: 2em; }
