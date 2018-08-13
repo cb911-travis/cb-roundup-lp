@@ -2,6 +2,13 @@
   background: black;
 }
 
+.stuck .nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+}
+
 .nav__container {
   display: flex;
   justify-content: space-between
