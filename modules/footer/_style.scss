@@ -1,0 +1,47 @@
+.footer {
+  padding: 2rem 0 2.5rem;
+}
+
+.footer__social {
+  margin-bottom: 1.25rem;
+}
+
+.footer__social a {
+  font-size: 23px;
+  color: #8f8f8f;
+}
+
+.footer__social a:hover {
+  color: #333;
+}
+
+.footer__social a + a {
+  margin-left: 0.75em;
+}
+
+.footer__contact {
+  margin-top: 1em;
+  color: #8f8f8f;
+  font-size: 18px;
+}
+
+.footer__logo {
+  opacity: 0.75;
+  text-align: center;
+}
+
+.footer__logo {
+  display: inline-block;
+  max-width: 200px;
+  width: 200px;
+  height: 75px;
+  margin-top: 20px;
+  background: url('img/logo--color.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__logo:hover {
+  opacity: 1;
+}
