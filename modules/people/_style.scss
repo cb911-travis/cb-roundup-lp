@@ -1,5 +1,6 @@
 .people {
   background: url('img/bg__grey-pattern.png');
+  background-position: -20px;
 }
 
 .profiles {
@@ -25,11 +26,15 @@
   background-size: 100%;
   background-repeat: no-repeat;
 
-  #monica  & { background-image: url('img/profile__monica.png') }
-  #craig   & { background-image: url('img/profile__craig.png')  }
+  #monica  & { background-image: url('img/profile__monica.png')  }
+  #craig   & { background-image: url('img/profile__craig.png')   }
   #carolyn & { background-image: url('img/profile__carolyn.png') }
 }
 
 .profile__description {
   font-size: 0.9em;
+}
+
+.profile__name {
+  font-weight: bold;
 }
