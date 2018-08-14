@@ -11,4 +11,11 @@ $color__muted: $grey;
 $font__primary: "Source Sans Pro", Helvetica, Arial, sans-serif;
 $font-size: 20px;
 
+// breakpoints
+$mobile: 500px;
+$phone: $mobile;
+$tablet: 768px;
+$desktop: 960px;
+$desktop-wide: 1200px;
+
 $radius: 2px;
