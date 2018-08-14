@@ -44,6 +44,7 @@ body.stuck {
       right: 0;
       z-index: 10;
       background: black;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21);
     }
   }
 
@@ -64,11 +65,21 @@ body.stuck {
   a {
     color: white;
     font-size: 0.75em;
+
+    @media (max-width: $mobile) {
+      display: block;
+      padding: 1em 0;
+
+      &:hover {
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.7)
+      }
+    }
   }
 
   @media (max-width: $nav__break) {
     margin: 0;
-    padding: 0.3em 0;
+    padding: 0 0;
 
     &:last-child {
       padding: 0;
@@ -77,7 +88,7 @@ body.stuck {
 
   @media (max-width: $mobile) {
     &:last-child {
-      padding: 0.3em 0 0.6em;
+//      padding: 0.3em 0 0.6em;
     }
   }
 }
@@ -87,6 +98,7 @@ body.stuck {
   color: white;
   align-items: center;
   display: none;
+  cursor: pointer;
 
   @media (max-width: $nav__break) {
     display: flex;
