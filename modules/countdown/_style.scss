@@ -10,10 +10,15 @@
   margin: 2em auto;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .time-wrapper {
   padding: 0 1.5em;
+
+  @media (max-width: $mobile) {
+    padding: 0.8em;
+  }
 }
 
 .time {
