@@ -4,11 +4,26 @@
   justify-content: space-between;
   color: white;
   padding: 3em 0 2.5em;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }
 
 .info-bar__item {
   display: flex;
   text-align: left;
+
+  @media (max-width: $mobile) {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid white;
+
+    &:last-child {
+      border: none;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .info-bar__info {
@@ -23,4 +38,12 @@
 
 .info-bar__item-description {
   font-weight: 300;
+}
+
+.info-bar__icon {
+  width: 75px;
+
+  img {
+    margin: 0 auto;
+  }
 }

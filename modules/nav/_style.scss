@@ -1,3 +1,5 @@
+$nav__break: 830px;
+
 .nav {
   background: black;
 }
@@ -7,6 +9,10 @@
   z-index: 2;
   top: 0;
   width: 100%;
+}
+
+body.stuck {
+  margin-top: 90px;
 }
 
 .nav__container {
@@ -27,6 +33,23 @@
 .nav__menu {
   display: flex;
   align-self: center;
+
+  @media (max-width: $nav__break) {
+    display: none;
+
+    &.is-active {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 10;
+      background: black;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .menu__item {
@@ -41,5 +64,31 @@
   a {
     color: white;
     font-size: 0.75em;
+  }
+
+  @media (max-width: $nav__break) {
+    margin: 0;
+    padding: 0.3em 0;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &:last-child {
+      padding: 0.3em 0 0.6em;
+    }
+  }
+}
+
+
+.nav__toggle {
+  color: white;
+  align-items: center;
+  display: none;
+
+  @media (max-width: $nav__break) {
+    display: flex;
   }
 }

@@ -1,0 +1,49 @@
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 100;
+}
+
+.modal__inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.modal__form {
+  padding: 2em;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 101;
+}
+
+.modal__close {
+  width: 100%;
+  background: rgba($color__primary,0.5);
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+  cursor: pointer;
+  z-index: 200;
+
+  &:hover {
+    background: rgba($color__primary,0.8);
+  }
+
+  @media (max-width: $mobile) {
+    position: relative;
+  }
+}

@@ -3,7 +3,7 @@
   const date = {};
 
   // day of the event
-  date.event = new Date("Sep 5, 2018 15:37:25").getTime();
+  date.event = new Date("Sep 27, 2018 13:00:00").getTime();
 
   // update the count down every second
   const update = setInterval(() => {
